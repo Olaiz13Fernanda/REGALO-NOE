@@ -5,6 +5,7 @@
 @font-face {
     font-family: "Pricedown";
     src: url("../FUENTES/Pricedown.ttf") format("truetype");
+    font-display: swap;
 }
 
 
@@ -22,8 +23,11 @@ html,
 body {
     width: 100%;
     min-height: 100%;
+
     overflow-x: hidden;
+
     background: #100817;
+
     font-family: Arial, sans-serif;
 }
 
@@ -36,11 +40,18 @@ button {
     cursor: pointer;
 }
 
+img {
+    max-width: 100%;
+}
+
 .contenedor {
     position: relative;
+
     width: 100%;
+
     min-height: 100vh;
     min-height: 100dvh;
+
     overflow: hidden;
 }
 
@@ -54,10 +65,12 @@ button {
     inset: 0;
 
     width: 100%;
+
     min-height: 100vh;
     min-height: 100dvh;
 
-    background-image: url("../IMAGENES/INICIO GTA.png");
+    background-image: url("../IMAGENES/INICIO GTA.webp");
+
     background-size: cover;
     background-position: center;
 
@@ -77,6 +90,7 @@ button {
 .escena-inicio {
     opacity: 1;
     visibility: visible;
+
     z-index: 2;
 }
 
@@ -93,6 +107,7 @@ button {
 
 .presentacion {
     position: absolute;
+
     top: 9%;
     left: 7%;
 
@@ -112,6 +127,7 @@ button {
     font-family: "Pricedown", Impact, sans-serif;
 
     font-size: clamp(35px, 6vw, 70px);
+
     letter-spacing: 2px;
     line-height: 1.1;
 
@@ -129,11 +145,13 @@ button {
     margin-top: 20px;
 
     font-size: clamp(14px, 2vw, 19px);
+
     letter-spacing: 1px;
 }
 
 .presentacion button {
     margin-top: 35px;
+
     padding: 16px 30px;
 
     border: 2px solid white;
@@ -157,6 +175,7 @@ button {
 
 .presentacion button:hover {
     transform: scale(1.08);
+
     box-shadow: 0 0 40px #ff1ca9;
 }
 
@@ -176,6 +195,7 @@ button {
 
 .carro-inicial {
     position: absolute;
+
     z-index: 2;
 
     width: min(65%, 800px);
@@ -209,7 +229,9 @@ button {
 
 .escena-persecucion {
     z-index: 4;
+
     background-position: center;
+
     overflow: hidden;
 }
 
@@ -357,6 +379,7 @@ button {
 
     display: flex;
     flex-direction: column;
+
     align-items: center;
 
     gap: 20px;
@@ -372,6 +395,7 @@ button {
     text-align: center;
 
     background: rgba(255, 245, 250, 0.95);
+
     color: #2d1832;
 
     border-radius: 8px;
@@ -417,6 +441,7 @@ button {
     margin-top: 18px;
 
     font-family: Georgia, serif;
+
     font-size: clamp(28px, 5vw, 40px);
 
     color: #a51c8e;
@@ -435,6 +460,7 @@ button {
     font-family: Georgia, serif;
 
     font-size: clamp(15px, 2vw, 18px);
+
     line-height: 1.8;
 }
 
@@ -442,6 +468,7 @@ button {
     margin-top: 18px;
 
     font-weight: bold;
+
     color: #a51c8e;
 }
 
@@ -449,6 +476,7 @@ button {
     margin-top: 25px;
 
     font-family: Georgia, serif;
+
     font-style: italic;
 
     color: #d326a0;
@@ -470,6 +498,7 @@ button {
     border-radius: 50%;
 
     background: #ed35a9;
+
     color: white;
 
     font-size: 25px;
@@ -668,6 +697,7 @@ button {
     color: white;
 
     font-family: "Pricedown", Impact, sans-serif;
+
     font-size: clamp(16px, 3vw, 25px);
 
     text-shadow: 0 0 15px #ff168e;
@@ -738,7 +768,7 @@ button {
 }
 
 
-/* FONDO DEL CUPÓN */
+/* FONDO */
 
 .fondo-cupon {
     position: fixed;
@@ -751,14 +781,14 @@ button {
             rgba(15, 0, 25, 0.45),
             rgba(15, 0, 25, 0.75)
         ),
-        url("../IMAGENES/INICIO GTA.png");
+        url("../IMAGENES/INICIO GTA.webp");
 
     background-size: cover;
     background-position: center;
 }
 
 
-/* CONTENEDOR */
+/* CONTENEDOR DEL CUPÓN */
 
 .contenido-cupon {
     width: min(1250px, 100%);
@@ -769,7 +799,7 @@ button {
 }
 
 
-/* IMAGEN ORIGINAL */
+/* IMAGEN ORIGINAL DEL CUPÓN */
 
 .imagen-cupon {
     display: block;
@@ -819,6 +849,7 @@ button {
     font-family: "Pricedown", Impact, sans-serif;
 
     font-size: clamp(25px, 5vw, 42px);
+
     letter-spacing: 2px;
 
     color: white;
@@ -832,6 +863,7 @@ button {
     margin-top: 15px;
 
     font-size: clamp(14px, 2vw, 19px);
+
     line-height: 1.6;
 }
 
@@ -855,9 +887,11 @@ button {
     max-width: 100%;
 
     color: white;
+
     text-decoration: none;
 
     font-size: clamp(12px, 2vw, 18px);
+
     font-weight: bold;
 
     letter-spacing: 1px;
@@ -869,6 +903,7 @@ button {
     );
 
     border: 3px solid white;
+
     border-radius: 50px;
 
     box-shadow:
@@ -898,6 +933,7 @@ button {
     height: 38px;
 
     border: 2px solid white;
+
     border-radius: 50%;
 
     font-size: 25px;
@@ -921,6 +957,7 @@ button {
     margin-top: 35px;
 
     font-size: 10px;
+
     letter-spacing: 5px;
 
     color: #ff9de2;
@@ -1055,6 +1092,7 @@ button {
         padding: 15px 10px;
 
         font-size: 12px;
+
         gap: 8px;
     }
 
