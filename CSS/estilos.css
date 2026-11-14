@@ -5,7 +5,6 @@
 @font-face {
     font-family: "Pricedown";
     src: url("../FUENTES/Pricedown.ttf") format("truetype");
-    font-display: swap;
 }
 
 
@@ -23,11 +22,8 @@ html,
 body {
     width: 100%;
     min-height: 100%;
-
     overflow-x: hidden;
-
     background: #100817;
-
     font-family: Arial, sans-serif;
 }
 
@@ -40,18 +36,11 @@ button {
     cursor: pointer;
 }
 
-img {
-    max-width: 100%;
-}
-
 .contenedor {
     position: relative;
-
     width: 100%;
-
     min-height: 100vh;
     min-height: 100dvh;
-
     overflow: hidden;
 }
 
@@ -65,12 +54,10 @@ img {
     inset: 0;
 
     width: 100%;
-
     min-height: 100vh;
     min-height: 100dvh;
 
-    background-image: url("../IMAGENES/INICIO GTA.webp");
-
+    background-image: url("../IMAGENES/INICIO GTA.png");
     background-size: cover;
     background-position: center;
 
@@ -90,7 +77,6 @@ img {
 .escena-inicio {
     opacity: 1;
     visibility: visible;
-
     z-index: 2;
 }
 
@@ -107,7 +93,6 @@ img {
 
 .presentacion {
     position: absolute;
-
     top: 9%;
     left: 7%;
 
@@ -127,7 +112,6 @@ img {
     font-family: "Pricedown", Impact, sans-serif;
 
     font-size: clamp(35px, 6vw, 70px);
-
     letter-spacing: 2px;
     line-height: 1.1;
 
@@ -145,13 +129,11 @@ img {
     margin-top: 20px;
 
     font-size: clamp(14px, 2vw, 19px);
-
     letter-spacing: 1px;
 }
 
 .presentacion button {
     margin-top: 35px;
-
     padding: 16px 30px;
 
     border: 2px solid white;
@@ -175,7 +157,6 @@ img {
 
 .presentacion button:hover {
     transform: scale(1.08);
-
     box-shadow: 0 0 40px #ff1ca9;
 }
 
@@ -195,7 +176,6 @@ img {
 
 .carro-inicial {
     position: absolute;
-
     z-index: 2;
 
     width: min(65%, 800px);
@@ -229,9 +209,7 @@ img {
 
 .escena-persecucion {
     z-index: 4;
-
     background-position: center;
-
     overflow: hidden;
 }
 
@@ -379,7 +357,6 @@ img {
 
     display: flex;
     flex-direction: column;
-
     align-items: center;
 
     gap: 20px;
@@ -395,7 +372,6 @@ img {
     text-align: center;
 
     background: rgba(255, 245, 250, 0.95);
-
     color: #2d1832;
 
     border-radius: 8px;
@@ -441,7 +417,6 @@ img {
     margin-top: 18px;
 
     font-family: Georgia, serif;
-
     font-size: clamp(28px, 5vw, 40px);
 
     color: #a51c8e;
@@ -460,7 +435,6 @@ img {
     font-family: Georgia, serif;
 
     font-size: clamp(15px, 2vw, 18px);
-
     line-height: 1.8;
 }
 
@@ -468,7 +442,6 @@ img {
     margin-top: 18px;
 
     font-weight: bold;
-
     color: #a51c8e;
 }
 
@@ -476,7 +449,6 @@ img {
     margin-top: 25px;
 
     font-family: Georgia, serif;
-
     font-style: italic;
 
     color: #d326a0;
@@ -498,7 +470,6 @@ img {
     border-radius: 50%;
 
     background: #ed35a9;
-
     color: white;
 
     font-size: 25px;
@@ -697,7 +668,6 @@ img {
     color: white;
 
     font-family: "Pricedown", Impact, sans-serif;
-
     font-size: clamp(16px, 3vw, 25px);
 
     text-shadow: 0 0 15px #ff168e;
@@ -768,7 +738,7 @@ img {
 }
 
 
-/* FONDO */
+/* FONDO DEL CUPÓN */
 
 .fondo-cupon {
     position: fixed;
@@ -781,14 +751,14 @@ img {
             rgba(15, 0, 25, 0.45),
             rgba(15, 0, 25, 0.75)
         ),
-        url("../IMAGENES/INICIO GTA.webp");
+        url("../IMAGENES/INICIO GTA.png");
 
     background-size: cover;
     background-position: center;
 }
 
 
-/* CONTENEDOR DEL CUPÓN */
+/* CONTENEDOR */
 
 .contenido-cupon {
     width: min(1250px, 100%);
@@ -799,7 +769,7 @@ img {
 }
 
 
-/* IMAGEN ORIGINAL DEL CUPÓN */
+/* IMAGEN ORIGINAL */
 
 .imagen-cupon {
     display: block;
@@ -849,7 +819,6 @@ img {
     font-family: "Pricedown", Impact, sans-serif;
 
     font-size: clamp(25px, 5vw, 42px);
-
     letter-spacing: 2px;
 
     color: white;
@@ -863,7 +832,6 @@ img {
     margin-top: 15px;
 
     font-size: clamp(14px, 2vw, 19px);
-
     line-height: 1.6;
 }
 
@@ -887,11 +855,9 @@ img {
     max-width: 100%;
 
     color: white;
-
     text-decoration: none;
 
     font-size: clamp(12px, 2vw, 18px);
-
     font-weight: bold;
 
     letter-spacing: 1px;
@@ -903,7 +869,6 @@ img {
     );
 
     border: 3px solid white;
-
     border-radius: 50px;
 
     box-shadow:
@@ -933,7 +898,6 @@ img {
     height: 38px;
 
     border: 2px solid white;
-
     border-radius: 50%;
 
     font-size: 25px;
@@ -957,7 +921,6 @@ img {
     margin-top: 35px;
 
     font-size: 10px;
-
     letter-spacing: 5px;
 
     color: #ff9de2;
@@ -1092,7 +1055,6 @@ img {
         padding: 15px 10px;
 
         font-size: 12px;
-
         gap: 8px;
     }
 
